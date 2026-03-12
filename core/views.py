@@ -14,7 +14,7 @@ def home(request):
 
 @api_view(['POST'])
 def post_student(request):
-    data = request.data
+    # data = request.data
     serializer = StudentsSerializer(data=request.data)
 
     if not serializer.is_valid():
